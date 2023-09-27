@@ -29,7 +29,7 @@ Route::get('/check', function () {
     return session('chat');
 });
 
-// Auth::routes();
+Auth::routes();
 // Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
